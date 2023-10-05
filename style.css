@@ -16,3 +16,10 @@ button{
     font-size: larger;
     font-family: sans-serif;
 }
+span{
+    background-color: rgb(41, 163, 102);
+    padding: 25px;
+    text-decoration: wavy;
+    font-size: larger;
+    font-family: sans-serif;
+}
