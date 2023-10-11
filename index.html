@@ -8,24 +8,30 @@
     <link rel = "stylesheet" href = "style.css">
     <script src = "scripting.js" async></script>
 </head>
-<body>
+<body onload = "initialize();">
     <header>
         <h1>CALORIE COUNTER</h1>
     </header>
     <button id = "button">CLICK ME FOR INSTRUCTIONS</button>
-    <button id = "button1">BREAKFAST DATA</button>
-    <button id = "button2">LUNCH DATA</button>
-    <button id = "button3">DINNER DATA</button>
+    <button id = "button1">APPETIZER DATA</button>
+    <button id = "button2">ENTREE DATA</button>
+    <button id = "button3">DESSERT DATA</button>
     <button id = "button4">+1</button>
     <button id = "button5">+5</button>
     <button id = "button6">+10</button>
     <button id = "button7">+100</button>
 
-    <table>
+    <!-- <table>
         <tr>
             <td><button onclick="giveOtherInstructions();">press me for instructions</button></td>
             <td> <div id="test">help</div></td>
         </tr>
-    </table>
+    </table> -->
+		<div id = "equation"></div>
+		<hr />
+		<button onclick = "updateFirstNumber(1);">+1</button> 
+		<button onclick = "updateFirstNumber(-1);">-1</button> 
+		<button onclick = "updateFirstNumber(10);">+10</button> 
+		<button onclick = "updateFirstNumber(-10);">-10</button>
 </body>
 </html>

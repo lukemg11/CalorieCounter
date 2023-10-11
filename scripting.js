@@ -24,8 +24,28 @@ button1.addEventListener("click", askForMealData);
 button2.addEventListener("click", askForMealData);
 button3.addEventListener("click", askForMealData);
 
-function giveOtherInstructions(){
-    const myDiv = document.getElementById("test");
-    console.log(myDiv)
-    myDiv.innerHTMl = "Instructions"
-}
+// function giveOtherInstructions(){
+//     const myDiv = document.getElementById("test");
+//     console.log(myDiv)
+//     myDiv.innerHTMl = "Instructions"
+// }
+
+function initialize()
+			{
+				equationOutput = document.getElementById("equation");
+				firstNumber = 0;
+				display();
+			}
+			function updateFirstNumber(modifier)
+			{
+				firstNumber += modifier;
+				calculate();
+			}
+			function calculate()
+			{
+				display();
+			}
+			function display()
+			{
+				equationOutput.innerHTML = firstNumber;
+			}
