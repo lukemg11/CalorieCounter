@@ -12,14 +12,21 @@
     <header>
         <h1>CALORIE COUNTER</h1>
     </header>
-    <button id = "button">CLICK ME FOR INSTRUCTIONS</button>
+    <!-- <table>
+        <tr>
+            <td><button id = "button">CLICK ME FOR INSTRUCTIONS</button></td>
+            <td> <div id="test">help</div></td>
+        </tr>
+    </table> -->
+    <button onclick = "updateInstructions();">CLICK ME FOR INSTRUCTIONS</button>
+    <div id = "instructions"></div>
+    <hr/>
     <button id = "button1">APPETIZER DATA</button>
     <button id = "button2">ENTREE DATA</button>
     <button id = "button3">DESSERT DATA</button>
-    <button id = "button4">+1</button>
-    <button id = "button5">+5</button>
-    <button id = "button6">+10</button>
-    <button id = "button7">+100</button>
+    <hr/>
+    <button id = "totalCals">TOTAL CALORIES</button>
+    <div id = "caloriecounter"></div>
 
     <!-- <table>
         <tr>
@@ -27,11 +34,13 @@
             <td> <div id="test">help</div></td>
         </tr>
     </table> -->
-		<div id = "equation"></div>
 		<hr />
 		<button onclick = "updateFirstNumber(1);">+1</button> 
 		<button onclick = "updateFirstNumber(-1);">-1</button> 
-		<button onclick = "updateFirstNumber(10);">+10</button> 
-		<button onclick = "updateFirstNumber(-10);">-10</button>
+		<button onclick = "updateFirstNumber(5);">+5</button> 
+		<button onclick = "updateFirstNumber(-5);">-5</button>
+        <button onclick = "done();">DONE</button>
+        <div id = "equation"></div>
+        <div id = "done"></div>
 </body>
 </html>
